@@ -44,7 +44,7 @@
 
         /* Navigation Styles */
         .navbar-premium {
-            background-color: var(--old-money-white);
+            background-color: rgb(255 255 255 / 90%);
             border-bottom: 1px solid #E5E7EB;
             backdrop-filter: blur(10px);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -53,6 +53,7 @@
             top: 0;
             width: 100%;
             z-index: 1050;
+            transition: all 0.3s ease;
         }
 
         .navbar-brand-premium {
@@ -418,23 +419,23 @@
             .newsletter-section {
                 padding: 2rem !important;
             }
-            
+
             .newsletter-section h3 {
                 font-size: 1.5rem;
             }
-            
+
             .certifications .d-flex {
                 justify-content: center;
             }
-            
+
             .contact-info {
                 text-align: center;
             }
-            
+
             .payment-section {
                 text-align: center;
             }
-            
+
             .footer-bottom-info {
                 text-align: center !important;
             }
@@ -627,7 +628,7 @@
     <!-- Footer -->
     <footer class="footer-premium">
         <div class="container">
-            <!-- Newsletter Section -->
+            {{-- <!-- Newsletter Section -->
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
                     <div class="newsletter-section p-5" style="background: linear-gradient(135deg, var(--old-money-green-dark) 0%, var(--old-money-green) 100%); border-radius: 1rem; position: relative; overflow: hidden;">
@@ -648,7 +649,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Main Footer Content -->
             <div class="row">
@@ -658,7 +659,7 @@
                             <i class="fas fa-gem me-3" style="color: var(--old-money-green-light); font-size: 1.5rem;"></i>ClubJS
                         </h3>
                         <p class="text-muted mb-4" style="line-height: 1.7;">Desde 2020, nos dedicamos a ofrecer productos de la más alta calidad con un servicio excepcional. Tu confianza y satisfacción son nuestro mayor logro.</p>
-                        
+
                         <!-- Awards/Certifications -->
                         <div class="certifications mb-4">
                             <h6 class="text-white mb-3">Certificaciones</h6>
@@ -787,18 +788,20 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
         // Enhanced navigation transparency on scroll
         document.addEventListener('DOMContentLoaded', function() {
             window.addEventListener('scroll', function() {
                 const navbar = document.querySelector('.navbar');
                 if (window.scrollY > 50) {
-                    navbar.style.backgroundColor = 'rgba(34, 59, 19, 0.95)';
-                    navbar.style.backdropFilter = 'blur(10px)';
+                    navbar.style.backgroundColor = 'rgb(255 255 255 / 95%)';
+                    navbar.style.backdropFilter = 'blur(15px)';
+                    navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.15)';
                 } else {
-                    navbar.style.backgroundColor = 'rgba(34, 59, 19, 0.9)';
-                    navbar.style.backdropFilter = 'blur(5px)';
+                    navbar.style.backgroundColor = 'rgb(255 255 255 / 90%)';
+                    navbar.style.backdropFilter = 'blur(10px)';
+                    navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
                 }
             });
 
@@ -808,7 +811,7 @@
                 newsletterForm.addEventListener('submit', function(e) {
                     e.preventDefault();
                     const email = document.getElementById('newsletter-email').value;
-                    
+
                     if (validateEmail(email)) {
                         // Show success message
                         showMessage('¡Gracias por suscribirte! Te enviaremos las mejores ofertas.', 'success');
@@ -827,7 +830,7 @@
                     console.log(`Social media click: ${platform}`);
                     // Add your analytics tracking here
                     showMessage(`Redirigiendo a ${platform}...`, 'info');
-                    
+
                     // Simulate redirect after brief delay
                     setTimeout(() => {
                         window.open('#', '_blank');
@@ -840,7 +843,7 @@
                 link.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateX(5px)';
                 });
-                
+
                 link.addEventListener('mouseleave', function() {
                     this.style.transform = 'translateX(0)';
                 });
@@ -925,7 +928,7 @@
         // Parallax effect for hero sections
         function initParallax() {
             const heroElements = document.querySelectorAll('.hero-section, .newsletter-section');
-            
+
             window.addEventListener('scroll', () => {
                 const scrolled = window.pageYOffset;
                 heroElements.forEach(element => {
@@ -940,7 +943,7 @@
             initParallax();
         }
     </script>
-    
+
     @vite(['resources/js/app.js'])
 </body>
 </html>
