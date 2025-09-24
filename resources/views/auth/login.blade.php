@@ -72,16 +72,7 @@
                         </a>
                     </div>
 
-                    <div class="mt-4">
-                        <div class="alert alert-info">
-                            <strong>Cuentas de prueba:</strong><br>
-                            <small>
-                                <strong>Admin:</strong> admin@clubjs.com / admin123<br>
-                                <strong>Empleado:</strong> maria@clubjs.com / empleado123<br>
-                                <strong>Cliente:</strong> juan@example.com / cliente123
-                            </small>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
