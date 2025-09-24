@@ -723,7 +723,7 @@
                                 <i class="fas fa-phone me-3 mt-1" style="color: var(--old-money-green-light);"></i>
                                 <div>
                                     <strong class="d-block text-white">Teléfono</strong>
-                                    <span class="text-muted">+34 915 123 456</span><br>
+                                    <span class="text-muted">+595 987 376791</span><br>
                                     <small class="text-muted">Lun-Vie: 9:00-20:00</small>
                                 </div>
                             </div>
@@ -738,15 +738,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-item mb-3">
-                            <div class="d-flex align-items-start">
-                                <i class="fas fa-map-marker-alt me-3 mt-1" style="color: var(--old-money-green-light);"></i>
-                                <div>
-                                    <strong class="d-block text-white">Oficina</strong>
-                                    <span class="text-muted">Calle Serrano 123<br>28006 Madrid, España</span>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
